@@ -78,7 +78,9 @@ class Song
     
     array = file.split("-")
     artist = array[0]
-    song = array[1].
+    song = create_by_name(array[1].
+    
+    
   person = Person.new
   person.name = name
   person.age = age
