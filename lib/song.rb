@@ -76,7 +76,15 @@ class Song
   
   def self.new_from_filename(file)
     
-    
+    array = file.split("-")
+    artist = array[0]
+    song = array[1].
+  person = Person.new
+  person.name = name
+  person.age = age
+  person.company = company
+  person
+end
     
   end
   
