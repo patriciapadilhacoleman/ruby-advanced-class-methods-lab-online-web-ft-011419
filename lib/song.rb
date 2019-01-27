@@ -77,8 +77,8 @@ class Song
   def self.new_from_filename(file)
     
     array = file.split("-")
-    artist = array[0].strip!
-    name = array[1].delete('.mp3').strip!
+    artist = array[0].strip
+    name = array[1].delete('.mp3').strip
     
     song = self.new
     song.name = name
