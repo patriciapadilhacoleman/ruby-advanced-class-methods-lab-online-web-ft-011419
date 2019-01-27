@@ -78,7 +78,8 @@ class Song
     
     array = file.split("-")
     artist = array[0].strip
-    name = array[1].slice!(".mp3").strip
+    array[1].slice!(".mp3")
+    name = array[1].strip
     
     binding.pry
     
