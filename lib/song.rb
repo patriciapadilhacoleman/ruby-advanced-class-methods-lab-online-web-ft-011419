@@ -80,12 +80,12 @@ class Song
     artist = array[0].strip
     array[1].slice!(".mp3")
     name = array[1].strip
-    
-    binding.pry
+  
     
     song = self.new
     song.name = name
     song.artist_name = artist
+    song.save
     song
    
     
