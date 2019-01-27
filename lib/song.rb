@@ -78,17 +78,8 @@ class Song
     
     array = file.split("-")
     artist = array[0]
-    song = create_by_name(array[1].delete("")
-    
-    
-  person = Person.new
-  person.name = name
-  person.age = age
-  person.company = company
-  person
-end
-    
-  end
+    song = create_by_name(array[1].delete('.mp3')
+    end
   
   def self.create_from_filename(file)
     
