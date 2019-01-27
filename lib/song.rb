@@ -77,12 +77,15 @@ class Song
   def self.new_from_filename(file)
     
     array = file.split("-")
-    artist = array[0].strip
+    artist = array[0]
+    name = array[1].delete('.mp3')
     
-    create_by_name(array[1].delete('.mp3'))
+    song = self.new
+    song.name = name
+    song.artist_name = artist
+    song
+   
     
-    
-    binding.pry
   end
   
   def self.create_from_filename(file)
