@@ -80,6 +80,8 @@ class Song
     artist = array[0].strip
     name = array[1].delete('.mp3').strip
     
+    binding.pry
+    
     song = self.new
     song.name = name
     song.artist_name = artist
